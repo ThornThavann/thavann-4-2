@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Farmer.css'
 
 function MyTable (){
   return (

@@ -1,14 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Farmers from "./pages/Farmer";
 import "./index.css";
 import App from "./App";
-import Farmland from "./pages/Farmland"
-import Cropcycle from "../src/pages/Cropcycle"
-import Account from "./pages/Account";
-
+import Crop from "./pages/Crop";
+import Croptype from "./pages/Croptype";
 
 
 
@@ -20,24 +16,12 @@ const router = createBrowserRouter([
     errorElement: <h1>Oop! Error!</h1>,
     children: [
       {
-        path: "/dashboard",
-        element: <Dashboard />
+        path: "/crop",
+        element: <Crop />
       },
       {
-        path: "/farmers",
-        element: <Farmers />
-      },
-      {
-        path: "/farmlands",
-        element: <Farmland />
-      },
-      {
-        path: "/cropcycles",
-        element: <Cropcycle />
-      },
-      {
-        path: "/account",
-        element: <Account />
+        path: "/croptype",
+        element: <Croptype />
       },
      
     ]

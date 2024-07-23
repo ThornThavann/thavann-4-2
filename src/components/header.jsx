@@ -1,4 +1,4 @@
 function Header (){
-    return <header>Agriculture Admin</header>
+    return <header> Thorn Thavann</header>
 }
 export default Header;
